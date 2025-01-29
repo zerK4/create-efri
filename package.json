@@ -1,0 +1,36 @@
+{
+  "name": "create-efri",
+  "module": "init.js",
+  "type": "module",
+  "author": {
+    "name": "Sebastian Pavel",
+    "email": "sebastian.v.pavel@gmail.com",
+    "url": "https://github.com/zerk4"
+  },
+  "homepage": "https://efri.sepavl.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerK4/create-efri.git"
+  },
+  "scripts": {
+    "postinstall": "chmod +x ./init.js",
+    "release": "semantic-release"
+  },
+  "bin": {
+    "create-efri": "./init.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "bun": "^1.2.1",
+    "chalk": "^5.4.1",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^12.3.3",
+    "ora": "^8.1.1"
+  }
+}
