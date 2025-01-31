@@ -148,7 +148,9 @@ async function init() {
   await mascotSays(
     "✨ Project setup complete! Here's what to do next:\n\n1. Navigate to your project:\n   " +
       chalk.cyan(`cd ${projectName}`) +
-      "\n\n2. Start the project:\n   " +
+      "\n\n2. Run the migrations:\n   " +
+      chalk.cyan("bun efri migrate") +
+      "\n\n3. Start the project:\n   " +
       chalk.cyan("bun start") +
       "\n\nHappy coding! 🦉✨"
   );
